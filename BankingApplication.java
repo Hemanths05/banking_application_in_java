@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class BankingApplication {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Bank bank = new Bank();
 
@@ -15,7 +15,7 @@ public class BankingApplication {
             System.out.println("6. Exit");
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -74,7 +74,7 @@ public class BankingApplication {
                     }
                     break;
                 case 6:
-                    System.out.println("Exiting the application. Goodbye!");
+                    System.out.println("Exiting.");
                     scanner.close();
                     return;
                 default:
